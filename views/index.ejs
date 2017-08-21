@@ -96,6 +96,12 @@
 				color: #000000;
 				background-color: rgba(0,255,255,0.75);
 			}
+			#helix:hover{
+				cursor: not-allowed;
+			}
+			#grid:hover{
+				cursor: not-allowed;
+			}				
 		</style>
 	</head>
 	<body>
@@ -105,10 +111,10 @@
 		<div id="container"></div>
 
 		<div id="menu">
-			<button id="table">TABLE</button>
-			<button id="sphere">SPHERE</button>
-			<button id="helix">HELIX</button>
-			<button id="grid">GRID</button>
+			<button id="table">表格</button>
+			<button id="sphere">球形</button>
+			<button id="helix" disabled>环形</button>
+			<button id="grid"  disabled>阵列</button>
             <button id="login_out">Login out</button>
 		</div>
 

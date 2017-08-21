@@ -13,7 +13,7 @@
 					// https://leancloud.cn/docs/leanstorage_guide-js.html#用户名和密码登录
 					AV.User.logIn(username, password).then(function (loginedUser) {
 						// 登录成功，跳转到商品 list 页面
-						window.location.href='index.html';
+						window.location.href='./index';
 					}, function (error) {
 						alert(JSON.stringify(error.message));
 					

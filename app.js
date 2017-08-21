@@ -33,12 +33,12 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 
-app.get('/', function(req, res) {
-  res.render('index', { currentTime: new Date() });
-});
+// app.get('/', function(req, res) {
+//   res.render('index', { currentTime: new Date() });
+// });
 
 // 可以将一类的路由单独保存在一个文件中
-app.use('/route', require('./routes/route'));
+app.use('/', require('./routes/route'));
 
 app.use(function(req, res, next) {
   // 如果任何一个路由都没有返回响应，则抛出一个 404 异常给后续的异常处理器

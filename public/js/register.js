@@ -23,7 +23,7 @@ $("#sumbit").click(function(){
     // user.setEmail(password);
     user.signUp().then(function (loginedUser) {
         alert("注册成功，自动登录中");
-        window.location.href='index.html';
+        window.location.href='./index';
       }, function (error) {
         alert(error.message);
       });

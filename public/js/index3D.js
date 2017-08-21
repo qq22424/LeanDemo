@@ -6,7 +6,7 @@ $(function(){
 			var targets = { Table: [], sphere: [], helix: [], grid: [] };
 			$.ajax({ 
 				type: "get", 
-				url: './assets/citydata.json', 
+				url: '/assets/citydata.json', 
 				dataType: "json", 
 				success: function (data) { 
 					init(data);
@@ -187,7 +187,7 @@ $(function(){
 //登录页面			
             	var button = document.getElementById( 'login_out' );
 				button.addEventListener( 'click', function ( event ) {
-                    	window.location.href='./login.html';
+                    	window.location.href='/login';
 
 			})
 		
