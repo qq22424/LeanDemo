@@ -5,9 +5,14 @@ var AV = require('leanengine');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express22' });
+  res.render('index');
 });
-
+router.get('/login', function(req, res) {
+  res.render('login');
+});
+router.get('/register', function(req, res) {
+    res.render('resg');
+  });
 
 module.exports = router;
 
