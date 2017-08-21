@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" href="css/main_login.css" />
+	  <link rel="stylesheet" href="../node_module/admin-lte/bootstrap/css/bootstrap.min.css">
+	  <!-- Font Awesome -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	  <!-- Ionicons -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+	  <!-- Theme style -->
+	  <link rel="stylesheet" href="../node_module/admin-lte/dist/css/AdminLTE.min.css">
+	  <!-- iCheck -->
+	  <link rel="stylesheet" href="../node_module/admin-lte/plugins/iCheck/square/blue.css">
+		<title>注 册</title>
+	</head>
+  
+<body>
+  <div class="bg_main">
+		<div class="wrap">
+		  	<div class="cube">
+				<div class="front login_img" ></div>
+				<div class="back login_img" ></div>
+				<div class="top login_img" ></div>
+				<div class="bottom login_img" ></div>
+				<div class="left login_img" ></div>
+				<div class="right login_img"></div>
+		  	</div>
+		</div>
+
+    <div class="bg_login">
+	
+    <div class="register-box">
+      <div class="register-logo">
+        <a href="./index.html"><b>Single</b>Dog</a>
+      </div>
+      <div class="register-box-body">
+        <p class="login-box-msg">只有单身狗才配拥有狗窝~ ！</p>
+        <form >
+          <div class="form-group has-feedback">
+            <input type="text" class="form-control" id="username" placeholder="手机号">
+            <span class="glyphicon glyphicon-user form-control-feedback"></span>
+          </div>
+          <!--<div class="form-group has-feedback">
+            <input type="email" class="form-control" id="email" placeholder="Email">
+            <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+          </div>-->
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" id="password" placeholder="密码">
+            <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+          </div>
+          <div class="form-group has-feedback">
+            <input type="password" class="form-control" id="repsw" placeholder="重复密码">
+            <span class="glyphicon glyphicon-log-in form-control-feedback"></span>
+          </div>
+          <div class="row">
+            <div class="col-xs-8">    
+                  <input type="text" class="form-control"  id="ver" placeholder="验证码">                  
+            </div>
+            <!-- /.col -->
+            <div class="col-xs-4">
+              <button type="button" id="verBtn" class="btn btn-primary btn-block btn-flat">发送验证码</button>
+            </div>
+            <!-- /.col -->
+          </div>
+        </form>
+          <div class="row">
+            <div class="col-xs-12">
+              <div class="checkbox icheck">
+                <label>
+                  <input type="checkbox">我同意此 <a href="#">规则</a>
+                </label>
+              </div>
+               <button type="button" id="sumbit" class="btn btn-primary btn-block btn-flat">注 册</button>
+            </div>
+            <!-- /.col -->
+       
+            <!-- /.col -->
+          </div>
+        </form>
+
+        <div class="social-auth-links text-center">
+          <p>- OR -</p>
+          <a href="#" class="btn btn-block btn-social btn-facebook btn-flat"><i class="fa fa-wechat "></i> 用微信登录</a>
+          <a href="#" class="btn btn-block btn-social btn-google btn-flat"><i class="fa fa-qq"></i>用QQ登录</a>
+        </div>
+        <a href="login.html" class="text-center">我已经有狗牌了</a>
+      </div>
+      <!-- /.form-box -->
+    </div>
+    <!-- /.register-box -->
+    </div>
+  </div>
+<!-- jQuery 2.2.3 -->
+			<script src="./admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+			<!-- Bootstrap 3.3.6 -->
+			<script src="./admin-lte/bootstrap/js/bootstrap.min.js"></script>
+			<!-- iCheck -->
+			<script src="./admin-lte/plugins/iCheck/icheck.min.js"></script>
+      <!--av-->
+      <script src="./js/av-min.js" ></script>
+      <script src="./js/app_init.js"></script>
+      <script src="./js/register.js"></script>
+<script>
+
+
+  
+</script>
+</body>
+</html>
