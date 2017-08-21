@@ -1,15 +1,16 @@
-'use strict';
-
+var express = require('express');
 var AV = require('leanengine');
-
 AV.init({
-  appId: process.env.LEANCLOUD_APP_ID,
-  appKey: process.env.LEANCLOUD_APP_KEY,
-  masterKey: process.env.LEANCLOUD_APP_MASTER_KEY
+  appId: process.env.LEANCLOUD_APP_ID || 'k3RjNuvpOJ4PH2NTnomgwJ1T-gzGzoHsz',
+  appKey: process.env.LEANCLOUD_APP_KEY || 'rvlzROsqTjmOidizSALCeyed',
+  masterKey: process.env.LEANCLOUD_APP_MASTER_KEY || 'Kc1TsxJ5Ac3546w3vY8HnXco'
 });
 
+
 // 如果不希望使用 masterKey 权限，可以将下面一行删除
-AV.Cloud.useMasterKey();
+// AV.Cloud.useMasterKey();
+var app = express();
+app.use(AV.express());
 
 var app = require('./app');
 
