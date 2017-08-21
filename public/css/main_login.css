@@ -2,7 +2,7 @@
 *{margin: 0;padding: 0;}
 			.wrap {
 				position: absolute;
-				left:40%; top:50%; transform:translate(-40%,-50%); -webkit-transform:translate(-50%,-50%); 
+				left:25%; top:50%; transform:translate(-40%,-50%); -webkit-transform:translate(-50%,-50%); 
 				  perspective: 1000px;
 				  perspective-origin: 50% 50% ;
 				}
@@ -92,5 +92,6 @@
 .bg_main{width: 100%;height: 100%;position: relative;background-color: #d2d6de;}
 .login_img{width:100%;background: url(/img/login_dog.jpg)no-repeat;background-size: 100%}
 /*login*/
-.login-box, .register-page{position: absolute;top: 0;right: 10%;}
-.register-box, .register-page{position: absolute;top: 0;right: 10%;}
+.bg_login{background-color: #d2d6de;}
+.login-box, .register-page{top: 0;margin: 0px auto !important;padding-top: 5%;opacity: 0.9;}
+.register-box, .register-page{top: 0;margin: 0px auto !important;padding-top: 5%;opacity: 0.9;}

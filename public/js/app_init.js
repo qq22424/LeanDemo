@@ -1,6 +1,0 @@
-  LEANCLOUD_APP_ID="";
-  LEANCLOUD_APP_KEY="";
-  AV.init({
-    appId: LEANCLOUD_APP_ID,
-    appKey: LEANCLOUD_APP_KEY
-  });
