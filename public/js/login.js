@@ -13,7 +13,7 @@
 		
 					AV.User.logIn(username, password).then(function (loginedUser) {
 						// 登录成功，跳转到商品 list 页面
-						window.location.href='./index';
+						window.location.href='/';
 					}, function (error) {
 						alert(JSON.stringify(error.message));
 					

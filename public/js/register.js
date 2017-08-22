@@ -1,41 +1,55 @@
 $(function(){
-// function submit(){
-//   var user = new AV.User();
-//   // 设置用户名
-//   user.setUsername($("#username").val());
-//   // 设置密码
-//   user.setPassword( $("#password"));
-//   user.setMobilePhoneNumber($("#username").val());
-//   user.signUp().then(function (loginedUser) {   
-//   }, function (error) {
-//   });
-// }
-$("#submit").click(function(){
- AV.User.logInWithMobilePhoneSmsCode($("#username").val(), $("#ver").val()).then(function (loginedUser) {
-   
-    user.set('mobilePhoneVerified',true);
-    alert("注册成功，自动寻路中~");
-        window.location.href='/';
-      
-  }, function (error) {
-    // 失败
-    alert(error.message)
-  });
-   
-   
-  });
- //发送手机号验证码
-  $("#verBtn").click(function(){
-     // 新建 AVUser 对象实例
-  var phoneNumber = $("#username").val();
-  AV.Cloud.requestLoginSmsCode(phoneNumber).then(function (success) {
-        alert("验证码发送成功");
-  }, function(err){
-        alert("验证码发送失败");
-});
-   
+  
+function submit(){
+  // 新建 AVUser 对象实例
+  var user = new AV.User();
+  // 设置用户名
+  user.setUsername($("#username").val());
+  // 设置密码
+  user.setPassword($("#password").val());
+  user.setMobilePhoneNumber($("#username").val());
+  // user.set('mobilePhoneVerified',"true");
+  user.signUp().then(function (loginedUser) {
 
+        $("#mobileVerBox").removeClass("hideBox");
+        $("#submit").addClass("disabled");
+    
+   }, function (error) {
+    alert(error.message);
   });
+}
+//点击提交注册
+$("#submit").click(function(){
+  submit();  
+  });
+
+// 点击验证手机
+$("#verBtn").click(function(){
+  AV.Cloud.verifySmsCode($("#ver").val(), $("#username").val()).then(function(){
+    alert("验证成功，正在自动寻路~");
+    window.location.href='/';
+}, function(err){
+    alert(err.message);
+});
+});
+
+//  //发送手机号验证码
+//   function verMobile(){
+//      // 新建 AVUser 对象实例
+//   var phoneNumber = $("#username").val();
+//   AV.Cloud.requestSmsCode({
+//     mobilePhoneNumber: phoneNumber,
+//     name: 'Dog单身狗',
+//     op: '领取狗牌',
+//     ttl: 10                     // 验证码有效时间为 10 分钟
+//    }).then(function(){
+//     alert("验证码发送成功")
+//    }, function(err){
+//     //调用失败
+//     alert(err.message);
+//    });
+//   }   
+
 
 
   $(function () {
