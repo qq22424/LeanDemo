@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<!-- <link rel="stylesheet" href="/css/main_login.css" /> -->
+	  <link rel="stylesheet" href="/admin-lte/bootstrap/css/bootstrap.min.css">
+	  <!-- Font Awesome -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+	  <!-- Ionicons -->
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+	  <!-- Theme style -->
+	  <link rel="stylesheet" href="/admin-lte/dist/css/AdminLTE.min.css">
+	  <!-- iCheck -->
+	  <link rel="stylesheet" href="/admin-lte/plugins/iCheck/square/blue.css">
+		<title>登 录</title>
+	</head>
+	<body>
+	<div class="bg_main">
+	
+	<div class="bg_login">
+	
+			<div class="login-box">
+			  <div class="login-logo">
+			    <a href="/"><b>Chat</b>Room</a>
+			  </div>
+			  <!-- /.login-logo -->
+			  <div class="login-box-body">
+			    <p class="login-box-msg">Chat Login</p>
+			
+			    <form  method="post">
+                    <div class="form-group has-feedback">
+                        <input type="text" id="ClientId" class="form-control"  placeholder="无限制">
+                        <span class="glyphicon glyphicon-user form-control-feedback"></span>
+                    </div>			      
+                    <div class="row">		        
+                    <!-- /.col -->
+                        <div class="col-xs-12">
+                            <button type="button" id="login" class="btn btn-primary btn-block btn-flat">登 录</button>
+                        </div>
+                    </div>			      
+			    </form>
+			
+			  
+			  </div>
+			</div>					
+			
+			
+		</div>		
+	</div>
+	
+	</body>
+	<!-- jQuery 2.2.3 -->
+			<script src="/admin-lte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+			<!-- Bootstrap 3.3.6 -->
+			<script src="/admin-lte/bootstrap/js/bootstrap.min.js"></script>
+			<!-- iCheck -->
+			<script src="/admin-lte/plugins/iCheck/icheck.min.js"></script>
+			<!--av-->
+	
+			<script src="/js/av-min.js" ></script>
+  <!-- 引入 LeanCloud 实时通信 SDK -->
+  <script src="/leancloud-realtime/dist/realtime.browser.min.js"></script>
+  <!-- 引入 LeanCloud 实时通讯 TypedMessages -->
+  <script src="/leancloud-realtime-plugin-typed-messages/dist/typed-messages.min.js"></script>
+
+		
+		
+			<script src="/js/chatLogin.js"></script>
+</html>
+
+	
