@@ -15,7 +15,7 @@
 						// 登录成功，跳转到商品 list 页面
 						window.location.href='/';
 					}, function (error) {
-						alert(JSON.stringify(error.message));
+						ErrMsg(JSON.stringify(error.message));
 					
 					
 					});

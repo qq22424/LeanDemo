@@ -4,9 +4,9 @@ var AV = require('leanengine');
 
 
 /* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('index');
-// });
+router.get('/', function(req, res, next) {
+  res.render('index');
+});
 // router.get('/', function(req, res, next) {
 //   res.render('square');
 // });
@@ -16,9 +16,9 @@ var AV = require('leanengine');
 // router.get('/', function(req, res,next) {
 //   res.render('chat');
 // });
-router.get('/', function(req, res,next) {
-  res.render('chatLogin');
-});
+// router.get('/', function(req, res,next) {
+//   res.render('chatLogin');
+// });
 router.get('/chatRoom', function(req, res,next) {
   res.render('chatRoom');
 });

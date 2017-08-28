@@ -30,12 +30,10 @@ iziToast.settings({
 });
 
 
-$(".trigger-info").on('click', function (event) {
-    event.preventDefault();
-
+function InfoMsg(msg){
     iziToast.info({
-        title: 'Hello',
-        message: 'Welcome!',
+        title: '提示',
+        message: msg,
         // imageWidth: 70,
 
         position: 'bottomLeft',
@@ -49,13 +47,12 @@ $(".trigger-info").on('click', function (event) {
             console.log("callback fechou! info");
         }
     });
-});
-$(".trigger-success").on('click', function (event) {
-    event.preventDefault();
+}
 
+function SucMsg(msg){
     iziToast.success({
-        title: 'OK',
-        message: 'Successfully inserted record!',
+        title: '成功',
+        message: msg,
         position: 'bottomRight',
         transitionIn: 'bounceInLeft',
         // iconText: 'star',
@@ -66,31 +63,27 @@ $(".trigger-success").on('click', function (event) {
             console.log("callback fechou! success");
         }
     });
-});
-$(".trigger-warning").on('click', function (event) {
-    event.preventDefault();
+}
 
+function WarningMsg(msg){
     iziToast.warning({
-        title: 'Caution',
-        message: 'You forgot important data',
+        title: '警告',
+        message: msg,
         position: 'topLeft',
         transitionIn: 'flipInX',
         transitionOut: 'flipOutX'
     });
-});
-$(".trigger-error").on('click', function (event) {
-    event.preventDefault();
-
+}
+function ErrMsg(msg){
     iziToast.error({
-        title: 'Error',
-        message: 'Illegal operation',
+        title: '错误',
+        message: msg,
         position: 'topRight',
         transitionIn: 'fadeInDown'
     });
-});
+}
+function CustomMsg(){
 
-$(".trigger-custom1").on('click', function (event) {
-    event.preventDefault();
 
     iziToast.show({
         title: 'Hey',
@@ -123,7 +116,7 @@ $(".trigger-custom1").on('click', function (event) {
                     color: 'dark',
                     icon: 'icon-ondemand_video',
                     title: 'OK',
-                    message: 'Callback V铆deo!',
+                    message: 'Callback Video!',
                     position: 'bottomCenter',
                     // iconText: 'star',
                 });
@@ -146,7 +139,7 @@ $(".trigger-custom1").on('click', function (event) {
         ]
     });
 
-});
+}
 
 
 $(".trigger-animInsideFalse").on('click', function (event) {
